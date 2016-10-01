@@ -3,7 +3,7 @@
 $name = trim($_POST['name']);
 $email = trim($_POST['email']);
 $phone = trim($_POST['phone']);
-$ticket = trim($_POST['ticket']);
+$phone = trim($_POST['ticket']);
 
 // Email address validation - works with php 5.2+
 function is_email_valid($email) {
@@ -20,7 +20,7 @@ if( isset($name) && isset($email) && isset($ticket) && isset($phone) && is_email
 	}
 
 	// Email will be send
-	$to = "pirekimail@gmail.com";  // Change with your email address
+	$to = "mail@themedept.com";  // Change with your email address
 	$subject = "New Event Subscription from GetLeads"; // If you want a default subject
 
 	// HTML Elements for Email Body

@@ -22,7 +22,7 @@ if( isset($name) && isset($email) && isset($phone) && isset($date) && isset($mes
 	}
 
 	// Email will be send
-	$to = "pirekimail@gmail.com";  // Change with your email address
+	$to = "mail@themedept.com";  // Change with your email address
 	$subject = "New appointment request from GetLeads"; // If you want a default subject
 
 	// HTML Elements for Email Body

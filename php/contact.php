@@ -20,7 +20,7 @@ if( isset($name) && isset($email) && isset($message) && isset($subject) && is_em
 	}
 
 	// Email will be send
-	$to = "pirekimail@gmail.com";  // Change with your email address
+	$to = "mail@themedept.com";  // Change with your email address
 	
 
 	// HTML Elements for Email Body

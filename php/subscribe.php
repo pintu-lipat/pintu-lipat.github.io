@@ -17,7 +17,7 @@ if( isset($email) & is_email_valid($email) ) {
 	}
 
 	// Email will be send
-	$to = "pirekimail@gmail.com";  // Change with your email address
+	$to = "mail@themedept.com";  // Change with your email address
 	$subject = "New email contact from GetLeads"; // If you want a default subject
 
 	// HTML Elements for Email Body
