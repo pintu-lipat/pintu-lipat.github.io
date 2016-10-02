@@ -211,7 +211,6 @@
                         <p>Apa pun yang ingin Anda bagi dengan kami,kami selalu siap untuk mendengarkan .Sistem email kami akan meneruskan pesan langsung ke admin situs yang akan mengurus untuk membalas Anda sesegera mungkin.</p>
                         <!-- .contact-form start -->
                         <div class="contact-form">                                
-                            <form class="wpcf7">
 								<form method="POST" action="http://formspree.io/pirekimail@gmail.com">
                                 <div class="form-group">
                                     <label>
@@ -234,9 +233,6 @@
                                     </label>
                                     <textarea name="message"  class="wpcf7-textarea form-control" id="contact-message" rows="4"></textarea>
                                 </div>
-
-                                <div id="recaptcha_response" class="g-recaptcha" data-sitekey="6Le4CwgUAAAAAESlxzJBW2N34aM4rGD8fGZFIphc"></div>
-
                                 <input type="submit" class="wpcf7-submit btn btn-primary float-right comment-reply" value="Send" />
 
                             </form>
@@ -483,8 +479,7 @@
                     var name = $('#contact-name').val();
                     var email = $('#contact-email').val();
                     var message = $('#contact-message').val();
-                    var recaptcha = grecaptcha.getResponse($("recaptcha_response")[0]);
-                    var form_data = new Array({'Name': name, 'Email': email, 'Message': message, 'Recaptcha': recaptcha});
+                    var form_data = new Array({'Name': name, 'Email': email, 'Message': message,});
 
                     $.ajax({
                         type: 'POST',
