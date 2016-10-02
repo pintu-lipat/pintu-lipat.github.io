@@ -1,1 +1,0 @@
-# pintu-lipat.github.io
